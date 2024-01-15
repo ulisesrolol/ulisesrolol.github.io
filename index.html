@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentos</title>
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        
+            }
+    
+        #playImage {
+            width: 100%;
+            max-width: 900px; /* Puedes ajustar el valor máximo según tus necesidades */
+            height: auto;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<img id="playImage" src="metro.png" alt="Imagen para activar la reproducción" style="cursor: pointer;">
+
+<script>
+    document.getElementById('playImage').addEventListener('click', function() {
+    var audio = new Audio('miaudio.mp3');
+    audio.play();
+    });
+</script>
+
+</body>
+</html>
